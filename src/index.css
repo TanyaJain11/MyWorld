@@ -6,8 +6,152 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.cart-item {
+  display: inline-flex;
+  margin: 20px 10px;
+}
+.cart-item .right-block {
+  padding: 0 20px;
+}
+.cart-item-actions {
+  margin-top: 20px;
+}
+.action-icons {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.action-icons:hover {
+  cursor: pointer;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/* section 1 */
+.sec1{
+  background-color: aliceblue;
+  height: 20vh;
+  width: 100%;
+  margin-top:100px;
+}
+
+.p1{
+  margin-top: 100px;
+}
+
+.p2{
+  height: 300px;
+  margin-top: 100px;
+  margin-left: 200px;
+
+}
+.p3{
+  height: 300px;
+  margin-top: 130px;
+}
+
+.sec-body{
+  margin-top:200px;
+  margin-left:100px;
+}
+
+.sec1-head{
+  color:white;
+  font-weight: 700;
+  font-size:40px;
+}
+
+.sec1-des{
+  font-size:20px;
+}
+
+.category{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.plants-cat{
+  border-radius:50%;
+  height:250px;
+}
+
+figcaption{
+  color:white;
+}
+
+.cat-head{
+  color:white;
+  font-size: 30px;
+  margin-left:130px;
+}
+
+.cat-sec{
+  margin-inline: 20px;
+  margin-top: 20px;
+  box-shadow: inset #b5bfc952 0px 1px 16px 0px;
+}
+
+.placement{
+ 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.placement img{
+  height: 250px;
+  width: 100%;
+  transition: all ease-in-out 5s;
+}
+
+.placement figure{
+  object-fit: cover;
+  overflow: hidden !important;
+  min-height: 250px;
+  }
+
+
+.placement img:hover {
+  transform: scale(1.5);
+}
+
+.pl-head{
+  color:white;
+  font-size:30px;
+  font-weight:500;
+}
+
+.pl-sec{
+  margin-inline: 20px;
+  margin-top: 20px;
+  box-shadow:inset #b5bfc952 0px 1px 16px 0px;
+
+}
+
+.name{
+  display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name figure{
+  object-fit: cover;
+  overflow: hidden !important;
+  min-height: 250px;
+}
+
+.name img{
+  height: 250px;
+  width: 100%;
+  transition: all ease-in-out 4s;
+}
+
+.name img:hover {
+  transform: scale(1.5);
+}
+
+.n-head{
+  color:white;
+  font-size:30px;
+  font-weight:500;
 }
