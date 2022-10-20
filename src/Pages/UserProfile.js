@@ -3,6 +3,7 @@ import { v4 as uuid } from "uuid";
 import api from '../api/contacts';
 import ContactList from './ContactList';
 import Contact from "./Contact";
+import Nav from './Nav';
 
 const UserProfile=()=>{
     const LOCAL_STORAGE_KEY = "contacts";
@@ -53,6 +54,7 @@ const UserProfile=()=>{
     }, [contacts]);
         return(
             <>
+            <Nav/>
       {/* <Contact addContactHandler={addContactHandler} /> */}
       <ContactList contacts={contacts} getContactId={removeContactHandler} />
             </>

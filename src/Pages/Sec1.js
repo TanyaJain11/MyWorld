@@ -19,7 +19,7 @@ const Sec1=()=>{
 
         </div>
         <div className="cat-sec">
-        <p className='cat-head'>Plants By Category</p>
+        <p className='cat-head text-center'>Plants By Category</p>
         <div className="category text-center">
         <figure>
         <img className="plants-cat px-3 my-2" src="../assets/images/Air-purifying.webp"/>

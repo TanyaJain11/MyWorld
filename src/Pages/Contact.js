@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from "./Nav.js";
+import {Link} from 'react-router-dom'
 
 class Contact extends React.Component{
     state ={
@@ -48,9 +49,16 @@ class Contact extends React.Component{
                         <textarea name="message" cols="20" rows="1" class="form-control"
                             placeholder="message"></textarea>
                     </div>
+                    <div class="mt-3 text-center mb-3">
+                    <button class="btn btn-primary">
+                        {/* Upload image */}
+                        <Link to="/upload" className="nav-link active" aria-current="page">Upload Image</Link>
+                    </button>
+                    </div>
                     <button class="btn btn-primary">
                         Submit Form
                     </button>
+                    
                 </div>
             </div>
         </div>

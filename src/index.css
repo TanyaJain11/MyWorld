@@ -62,7 +62,10 @@ body {
 }
 
 .sec1-des{
-  font-size:20px;
+  /* font-size:20px; */
+  color: #09dce6;
+  font-size: larger;
+
 }
 
 .category{
@@ -154,4 +157,14 @@ figcaption{
   color:white;
   font-size:30px;
   font-weight:500;
+}
+
+.card img{
+  transition: all ease-in-out 4s;
+  max-height: 222px;
+}
+
+.card img:hover{
+  transform: scale(1.1);
+  max-height:222px;
 }

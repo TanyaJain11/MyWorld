@@ -3,21 +3,25 @@ import React ,{ useState, useEffect } from 'react'
 import { v4 as uuid } from "uuid";
 import './App.css';
 import api from './api/contacts';
-import Nav from './Pages/Nav';
 import Home from './Pages/Home';
-import Sec1 from './Pages/Sec1';
 import Login from "./Pages/Login.js";
 import Contact from "./Pages/Contact";
 import Edit from "./Pages/Edit";
 import UserProfile from "./Pages/UserProfile";
 import {Route, Routes} from 'react-router-dom';
 import ContactList from './Pages/ContactList';
+import Buy from './Pages/BUY/Buy';
+import ByLocation from './Pages/BUY/ByLocation';
+import ByName from './Pages/BUY/ByName';
+import Upload from "./Upload.jsx";
 
 // import CartItem from './Pages/CartItem';
 
 
 
 function App() {
+
+  const [logoutUser, setLogoutUser] = useState(false);
 
   const LOCAL_STORAGE_KEY = "contacts";
   const [contacts, setContacts] = useState(
@@ -82,9 +86,16 @@ function App() {
     <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="login" element={<Login/>} />
+    <Route path="/upload" element={<Upload/>} />
+    {/* <Route path="/login">
+            <Login setLogoutUser={setLogoutUser} />
+    </Route> */}
     <Route path="contact" element={<Contact addContactHandler={addContactHandler}/>} />
     <Route path="/contactList" element={()=>(<ContactList contacts={contacts} getContactId={removeContactHandler}/>)}/>
     <Route path="/userProfile" element={<UserProfile/>} />
+    <Route path="/buy" element={<Buy/>} />
+    <Route path="/location" element={<ByLocation/>} />
+    <Route path="/name" element={<ByName/>} />
     <Route path="/edit" element={<Edit updateContactHandler={updateContactHandler} contacts={contacts}/>} />
     {/* <Route
   path="/edit"

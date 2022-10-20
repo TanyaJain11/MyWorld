@@ -30,7 +30,13 @@ const Nav=()=>{
           </ul>
         </li> */}
         <li className="nav-item px-2">
+          <Link to='/buy' className="nav-link" tabindex="-1" aria-disabled="true">Buy</Link>
+        </li>
+        <li className="nav-item px-2">
           <Link to='/contact' className="nav-link" tabindex="-1" aria-disabled="true">Contact Us</Link>
+        </li>
+        <li className="nav-item px-2">
+          <Link to='/upload' className="nav-link" tabindex="-1" aria-disabled="true">Upload</Link>
         </li>
       </ul>
       <ul className="navbar-nav d-flex flex-row">
